@@ -1,0 +1,46 @@
+print a statement, asking user to input a positive number
+
+store the number entered 
+
+get another input from user
+
+compare the number against the previous number
+
+if the number is higher than the previous number, overwrite the previous number
+
+if the user inputs a zero, print the stored number
+
+
+
+
+generate a random number
+
+run a loop from 0 to the generated number 
+
+generate a random number in the loop and add it to an array of the previous randomly generated number
+
+calculate the average of all of the stored numbers in the array
+
+
+
+
+iterate over the shopping list
+
+if the current item's first letter is further in the alphabet that the previous, swap the locations 
+
+repeat until the list is alphabetical order
+
+print shopping list
+
+
+
+
+get x and y as inputs
+
+store the value of x + y in s
+
+store the value of s / 2 in a
+
+store the value of x * y in p
+
+print the values stored in s, a and p

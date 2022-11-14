@@ -1,0 +1,15 @@
+get four numbers from the user
+
+compare the first number to the second number 
+
+if the first number is larger, swap their locations
+
+compare the third number to the fourth number
+
+if the third number is larger, swap their locations
+
+compare the second number to the third number
+
+if the second number is larger, swap their locations
+
+print numbers in the new order

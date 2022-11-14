@@ -1,0 +1,13 @@
+get an integer input from the user
+
+store the input value in n
+
+create an array called fib_numbers
+
+push 0 and 1 into fib_numbers
+
+run a loop n times, adding the last number in the array, to the second last number
+
+with every iteration, push the sum of the last 2 numbers into fib_numbers
+
+after loop completes, print fib_numbers
