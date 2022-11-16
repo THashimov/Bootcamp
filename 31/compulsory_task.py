@@ -39,9 +39,6 @@ class Course:
 
 
 class OOPCourse(Course) :
-    description = str
-    trainer = str
-
     def __init__(self) :   
         self.description = "OOP Fundamentals"
         self.trainer = "Mr Anon A. Mouse"

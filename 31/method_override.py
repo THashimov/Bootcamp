@@ -1,10 +1,5 @@
-# Create an adult class and set the types
 # Create a method to print that the person can drive
 class Adult :
-    name = str
-    age = int
-    eye_col = str
-    hair_col = str
 
     def __init__(self, name, age, eye_col, hair_col) :
         self.name = name
@@ -15,7 +10,6 @@ class Adult :
     def can_drive(self) :
         print(f"{self.name} can drive")
 
-# Create an adult class and set the types
 # Create a method to print that the person cannot drive
 # This inherits all of the data from the adult class so we don't need to declare anything or have an init
 class Child(Adult) :

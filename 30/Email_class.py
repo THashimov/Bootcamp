@@ -1,12 +1,7 @@
 import os 
 
-# Create a class and set the types to ensure we don't get a type mixup when instantiating 
+# Create a class and initialise all values
 class Email :
-    has_been_read = bool
-    email_contents = str
-    is_spam = bool
-    from_address = str
-
     def __init__(self, addr, content) :
         self.from_address = addr
         self.has_been_read = False

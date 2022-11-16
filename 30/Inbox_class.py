@@ -1,7 +1,7 @@
 from Email_class import Email
 
 class Inbox :
-    inbox = [Email]
+    inbox = []
     def __init__(self) :
         self.inbox = []
 
