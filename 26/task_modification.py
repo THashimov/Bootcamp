@@ -180,20 +180,25 @@ def modify_task(task):
 
 # Open the file and read each line until we find the right task number
 # Once we find the right task number, we can ask the user to input a date
+# If date is valid, capitalize the date and ensure we push with a space
 # Split the line into a list, modify the date and then write to file
 def change_due_date(task):
     if validation_checks.has_task_been_completed(task) != True:
         print("What would you like the new due date to be? Please use dd mon yyyy")
         while True :
             date = input()
-            if validation_checks.validate_date_format(date) :
+
+            if validation_checks.validate_date_format(date) and validation_checks.is_date_in_the_future(date):
+                date = date.split()
+                date[1] = date[1].capitalize()
+                date = " ".join(date)
                 tasks_file = open('26/tasks.txt', 'r', encoding='UTF-8')
                 modified_content = []
 
                 for line in tasks_file :
                     if line[:1] == str(task) :
                         split_line = line.split(",")
-                        split_line[5] = date
+                        split_line[5] = " " + date
                         line = ",".join(split_line)
                         modified_content.append(line)
                     else :

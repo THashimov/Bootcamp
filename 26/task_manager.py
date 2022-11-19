@@ -59,8 +59,8 @@ e - Exit
             new_user = user_modification.create_new_user()
             if new_user != False :
                 user_modification.reg_user(new_user)
-        else :
-            print("Sorry, only admin can register new users")
+        else:
+            print("You have made a wrong choice, Please Try again")
 
     elif menu == 'a':
         task = task_modification.create_task()
@@ -76,10 +76,16 @@ e - Exit
         stats.view_mine(username)
 
     elif menu == 'ds' :
-        stats.show_stats()
+        if username == "admin" :
+            stats.show_stats()
+        else:
+            print("You have made a wrong choice, Please Try again")
 
     elif menu == 'gr' :
-        generate_report.generate_report()
+        if username == "admin" :
+            generate_report.generate_report()
+        else:
+            print("You have made a wrong choice, Please Try again")
 
     elif menu == 'e':
         print('Goodbye!!!')

@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 # Check if the username exists 
 # Split line into a list
 # Check if the first index matched the username
@@ -62,3 +65,35 @@ def does_task_match_user(task_selected, user) :
             
     tasks_file.close()
     return False
+
+
+# Capitalize the date and check if it is in the past
+# Only allow a date to be changed if the new date is in the future
+def is_date_in_the_future(date) : 
+    today = datetime.now()
+    date = date.split()
+    date[1] = date[1].capitalize()
+    date = " ".join(date)
+
+    task_date = datetime.strptime(date, "%d %b %Y")
+
+    if task_date < today :
+        print("Date cannot be in the past")
+        return False
+    else :
+        return True
+
+
+# Check if the due date of the task is in the past, if it is then the task is overdue
+def is_task_overdue(date) :
+    today = datetime.now()
+    date = date.split()
+    date[1] = date[1].capitalize()
+    date = " ".join(date)
+
+    task_date = datetime.strptime(date, "%d %b %Y")
+
+    if task_date < today :
+        return True
+    else :
+        return False
