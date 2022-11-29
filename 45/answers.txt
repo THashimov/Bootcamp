@@ -1,0 +1,10 @@
+Normalization is a method of removing anomalies to bring the database into a consistent state. This helps to reduce data redundancy. We want to reduce this because repetition of the same data uses up more space, it also causes other issues with insertion and deletion. 
+
+Let's imagine we have a database which holds student data and campus data. The first 2 rows hold the data for the student, the next 3 rows hold the data for campus and the campus data is the same for every student. If we want to update the campus data, we must go through the entire table and update the field for each record.
+
+1NF is where all the keys in a table are defined, there are no repeating groups and all attributes are dependant on the primary key.
+
+For a table to be in 2NF, it has to already be in 1NF and it has no partial dependencies. A partial dependency is where a key is shared across multiple records, the way to remove a partial dependency is to have a composite identify the record. 
+
+For a table to be in 3NF, it has to already be in 2NF and contain no transitive dependencies. A transitive dependency is where we have a composite key which all of the fields don't depend on. There could be one or multiple other fields which depend on a field that isn't the primary key. We can bunch the fields together and save them in a separate table.
+

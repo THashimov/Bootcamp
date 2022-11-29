@@ -1,0 +1,19 @@
+Data is the information stored in a database. This can be usernames, phone numbers etc.
+
+Field is similar to a key. It is a way of identifying where the data is stored. These can be pictured as colum headings.
+
+Record is a collection of fields that describe something. Such as a student, which holds the students phone number, email etc. This can be pictured as the row which contains all of the fields.
+
+File is a collection of related records.
+
+A DBMS is an intermediary between the user and the database. It manages the database and gives the user access to the database. It is an efficient and effective way of managing a database as it abstract away a lot of the complexity from the user. 
+
+Data is a collection of facts. Data is unorganized and unrelated.
+
+Information puts data into context and is organized. Information collates data into something readable and meaningful.
+
+Metadata contains data which describes what the rest of the data is. In a file type, metadata would indicate what the file type is. 
+
+The following file contains 4 records.
+
+The following file contains 5 records.

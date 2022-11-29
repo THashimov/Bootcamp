@@ -1,0 +1,11 @@
+A protocol is a set of rules which a system must follow to ensure multiple systems can communicate using a known set of rules
+
+HTTP is built on top of the TCP/IP protocol
+
+A success code from an HTTP request is 200 OK
+
+A stateless protocol is where the receiver does not retain the session state. A receiver will respond based on the request from the sender, ignoring any previous requests
+
+C and F are valid MIME types
+
+403 Forbidden is the response for a forbidden request

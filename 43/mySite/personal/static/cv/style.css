@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "robotomono";
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+:root {
+    --cloud1_top: 0;
+    --cloud2_top: 9em;
+    --cloud3_top: 18em;
+    --cloud4_top: 30em;
+    --cloud1_left: 0;
+    --cloud2_left: 20em;
+    --cloud3_left: 10em;
+    --cloud4_left: 30em;
+}
+.cloud1,
+.cloud2,
+.cloud3, 
+.cloud4 {
+    width: 5em;
+    z-index: -100;
+    position: fixed;
+    animation: float infinite;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+}
+
+.cloud2 {
+    margin-top: var(--cloud2_top);
+    margin-left: var(--cloud2_left);
+
+}
+
+.cloud3 {
+    margin-top: var(--cloud3_top);
+    margin-left: var(--cloud3_left);
+}
+
+.cloud4 {
+    margin-top: var(--cloud4_top);
+    margin-left: var(--cloud4_left);
+}
+
+h1 {
+    color: brown;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+} 
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(5, 192, 161);
+}
+
+.myDetails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.projectContent a {
+    margin-top: 0.5em;
+}
+
+.workDetails,
+.collegeDetails {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(131, 23, 23);
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+footer {
+    height: 3em;
+}
+
+@keyframes float {
+    0% {left: -30em;}
+    100% {left: 100vw;}
+}

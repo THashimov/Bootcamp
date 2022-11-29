@@ -1,0 +1,101 @@
+CREATE TABLE Student (
+"STU_NUM" CHAR(6) PRIMARY KEY,
+"STU_SNAME" VARCHAR(15),
+"STU_FNAME" VARCHAR(15),
+"STU_INITIAL" CHAR(1),
+"STU_STARTDATE" DATE,
+"COURSE_CODE" CHAR(3),
+"PROJ_NUM" INT(2)
+);
+
+INSERT INTO Student
+VALUES (
+"01", 
+"Snow",
+"Jon",
+"E",
+"05-Apr-14",
+"201",
+"6"
+)
+
+INSERT INTO Student
+VALUES (
+"02",
+"Stark",
+"Arya",
+"C",
+"12-Jul-17",
+"305",
+"11"
+)
+
+INSERT INTO Student
+VALUES (
+"03",
+"Lannister",
+"Jamie",
+"C",
+"05-Sep-12",
+"101",
+"2"
+)
+
+INSERT INTO Student
+VALUES (
+"04",
+"Lannister",
+"Cercei",
+"J",
+"05-Sep-12",
+"101",
+"2"
+)
+
+INSERT INTO Student
+VALUES (
+"05",
+"Greyjoy",
+"Theon",
+"I",
+"9-Dec-15",
+"402",
+"14"
+)
+
+INSERT INTO Student
+VALUES (
+"06",
+"Tyrell",
+"Margaery",
+"Y",
+"12-Jul-17",
+"305",
+"10"
+)
+
+INSERT INTO Student
+VALUES (
+"07",
+"Baratheon",
+"Tommen",
+"R",
+"13-Jun-19",
+"201",
+"5"
+)
+
+UPDATE Student
+SET course_code = "304"
+WHERE stu_num = "07"
+
+DELETE from Student
+where stu_fname = "Jamie" and 
+stu_sname = "Lannister" and 
+stu_startdate = "05-Sep-12" AND
+course_code = "101" AND
+proj_num = "2"
+
+DELETE from Student;
+
+DROP TABLE Student
